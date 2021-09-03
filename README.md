@@ -1,4 +1,4 @@
-# CursoJS-ex01
+# CursoJS-Curso em video
 
 ex001 - Pagina web simples, que exibe a hora e uma informação de acordo com o horário do seu sistema.
 
