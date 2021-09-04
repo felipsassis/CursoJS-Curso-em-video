@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+</head>
+<body>
+    <h1>Verificador de idade</h1>
+    Diga a sua idade na caixa ao lado => <input type="number" name="text" id="text">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+</body>
+<script>
+    function calcular(){
+        var txt = document.getElementById("text")
+        var idade = Number(txt.value)
+        var res = document.getElementById("res")
+        res.innerHTML = `<p> A idade digitada é: ${idade}`
+
+            if (idade >= 18){
+                res.innerHTML += `<p>Seja Bem-Vindo Senhor!</p>`
+            }
+            else{
+                res.innerHTML += `<p>Você é menor de idade e não pode entrar!</p>`
+            }
+        res.innerHTML += `<p>Obrigado pelas informações</p>`
+    }
+</script>
+</html>

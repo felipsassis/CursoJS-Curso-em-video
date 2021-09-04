@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA DE CONVIDADOS</title>
+</head>
+<body>
+    <h1>LISTA DOS CONVIDADOS</h1>
+    Digite seu nome para verificar se está na lista: <input type="text" name="text" id="nome">
+    <input type="button" value="Pesquisar" onclick="pesquisar()">
+    <div id="res"></div>
+</body>
+
+<script>
+    function pesquisar(){
+        var txt = document.getElementById("nome")
+        var nome = String(txt.value).toLowerCase()
+        var res = document.getElementById("res")
+        res.innerHTML = `<p>O nome digitado é ${nome}</p>`
+
+        if (nome == "felipe" || nome == "fernando"){
+            res.innerHTML += `<p>Senhor <strong>${nome}</strong> seja bem-vindo</p>`
+        }
+        else{
+            res.innerHTML += `<p>Sinto muito mas você não está na lista</p>`
+        }
+    }
+</script>
+</html>
