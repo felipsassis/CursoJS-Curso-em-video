@@ -1,3 +1,4 @@
+console.log("Vai começar")
 function calcular(){
     var num = document.getElementById("numero").value
     var res = document.getElementById("res")
@@ -10,3 +11,4 @@ function calcular(){
 
 
 }
+console.log("FIM!")

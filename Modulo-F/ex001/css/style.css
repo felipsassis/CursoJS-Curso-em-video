@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 255, 0.459);
+}
+
+
+#container-principal{
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.541);
+}
+
+select#flista{
+    width: 350px;
+    margin-top: 20px;
+    border: 2px solid black;
+}
